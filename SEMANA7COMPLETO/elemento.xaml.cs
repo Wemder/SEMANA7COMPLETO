@@ -29,7 +29,7 @@ namespace SEMANA7COMPLETO
             btn_actualizar.Clicked += Btn_actualizar_Clicked;
             btn_eliminar.Clicked += Btn_eliminar_Clicked;
         }
-
+        //eliminar
         private void Btn_eliminar_Clicked(object sender, EventArgs e)
         {
           var rutaDB = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "uisrael.db3");
