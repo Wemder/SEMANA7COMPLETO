@@ -35,10 +35,13 @@ namespace SEMANA7COMPLETO
         {
             var Obj = (Estudiante)e.SelectedItem;
             var item = Obj.Id.ToString();
+            var contra = Obj.contrasena;
+            var usua = Obj.usuario;
+            var nombre= Obj.Nombre;
             int ID = Convert.ToInt32(item);
             try
             {
-               // Navigation.PushAsync(new elemento(ID));
+                Navigation.PushAsync(new elemento(ID,nombre,usua,contra));
 
             }
             catch(Exception)

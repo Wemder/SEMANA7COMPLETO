@@ -3,13 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SEMANA7COMPLETO.elemento"
              Title="elemento"
-             Icon="cuaderno.png">
+             Icon="cuaderno.png" Background="#112B47">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text=""
+        <StackLayout Margin="5"
+                     >
+            <Label Text="" 
                    TextColor="Brown"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lblMensaje"
+                   HorizontalOptions="Center"/>
+            <Entry x:Name="txtNombre "
+                   Placeholder="Nombre" TextColor="Wheat" PlaceholderColor="Gray"/>
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Usuario" TextColor="Wheat" PlaceholderColor="Gray"/>
+            <Entry x:Name="txtContrasena"
+                   Placeholder="Contrasena" TextColor="Wheat" PlaceholderColor="Gray"/>
+            <Button Text="Eliminar"  x:Name="btn_eliminar"  TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"  />
+            <Button Text="Actualizar"  x:Name="btn_actualizar"  TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,5 +4,5 @@
             x:Class="SEMANA7COMPLETO.Menu"
              Background="#112B47">
     <local:ConsultaRegistro/>
-    <local:elemento/>
+    <local:Agendamiento/>
 </TabbedPage>
