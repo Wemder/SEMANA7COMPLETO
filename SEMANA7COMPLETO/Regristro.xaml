@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Nombre: " TextColor="Wheat"/>
+                <Label Text="Nombre: " TextColor="Wheat" />
                 <Entry Placeholder="Introduce tu Nombre" x:Name="Nombre" TextColor="White" PlaceholderColor="Gray"/>
                 <Label Text="Usuario: " TextColor="Wheat"/>
                 <Entry Placeholder="Introduce tu Usuario " TextColor="White" Keyboard="Email" x:Name="Usuario"  PlaceholderColor="Gray"/>

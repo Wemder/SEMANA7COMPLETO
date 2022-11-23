@@ -41,7 +41,7 @@ namespace SEMANA7COMPLETO
             int ID = Convert.ToInt32(item);
             try
             {
-                Navigation.PushAsync(new elemento(ID,nombre,usua,contra));
+                Navigation.PushAsync(new Elementos(ID,nombre,usua,contra));
 
             }
             catch(Exception)

@@ -23,7 +23,7 @@
     <EmbeddedResource Update="ConsultaRegistro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="elemento.xaml">
+    <EmbeddedResource Update="Elementos.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="loguin.xaml">

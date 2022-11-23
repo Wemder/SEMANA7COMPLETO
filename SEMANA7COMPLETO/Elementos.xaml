@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEMANA7COMPLETO.Elementos"
+             Background="#112B47">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <Label Text="Datos del contacto"
+                   BackgroundColor="WhiteSmoke"
+                   HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lblMensaje"
+                   HorizontalOptions="Center"/>
+            <Entry x:Name="txtNombre"
+                   Placeholder="Nombre" TextColor="White" PlaceholderColor="Gray" />
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Usuario" TextColor="White"  PlaceholderColor="Gray"/>
+            <Entry x:Name="txtContrasena"
+                   Placeholder="contrasena" TextColor="White"  PlaceholderColor="Gray"/>
+            <Button Text="Actualizar"
+                    x:Name="btn_actualizar"   TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"  Clicked="btn_actualizar_Clicked"/>
+            <Button Text="Eliminar"
+                    x:Name="btn_eliminar" TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"  Clicked="btn_eliminar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
