@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -39,8 +40,13 @@ namespace SEMANA7COMPLETO.modelos
 
         public DateTime fechaNacimiento { get; set; }
 
+        [OneToMany]
+        public List<CitaMedica> citaMedica { get; set; } 
+        
         public string getNameValue() {
             return this.primerNombre + this.primerApellido;
         }
+
+
     }
 }

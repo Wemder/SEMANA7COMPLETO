@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,5 +16,8 @@ namespace SEMANA7COMPLETO.modelos
         
         [MaxLength(50)]
         public string descripcion { get; set; }
+
+        [OneToMany]
+        public List<CitaMedica> citaMedica { get; set; }
     }
 }
