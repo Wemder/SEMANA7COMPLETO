@@ -21,10 +21,10 @@
                 <Button x:Name="btnIniciar" TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
                         CornerRadius="50"
                         BorderColor="ForestGreen" 
-                        Text="Iniciar secion" Clicked="btnIniciar_Clicked"/>
+                        Text="Ingresar" Clicked="btnIniciar_Clicked"/>
                 <Button x:Name="btnRegrisgtar"  TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
                         CornerRadius="50" 
-                        BorderColor="ForestGreen" Text="Regristar" Clicked="btnRegrisgtar_Clicked"/>
+                        BorderColor="ForestGreen" Text="Registrar" Clicked="btnRegrisgtar_Clicked"/>
                 
         </StackLayout>
         </ScrollView>
