@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEMANA7COMPLETO.ListadoCita"
+             Title="Listado citas"
+             Icon="ListaCita.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblCitaMedica"
+                   TextColor="White"
+                   FontSize="Medium"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="ListaCitas" ItemSelected="OnSelection">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell TextColor="White" Text="{Binding titulo}" Detail="{Binding descripcion}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

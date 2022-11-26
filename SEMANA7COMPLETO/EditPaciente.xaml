@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEMANA7COMPLETO.EditPaciente"
+             Title="Datos Paciente"
+             Icon="https://e7.pngegg.com/pngimages/858/581/png-clipart-profile-icon-user-computer-icons-system-chinese-wind-title-column-miscellaneous-service.png"
+             Background="#112B47">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Primer Nombre: " TextColor="White" />
+                <Entry Placeholder="Ingresa tu primer nombre" x:Name="txtPrimerNombre" TextColor="White" PlaceholderColor="Gray"/>
+                <Label Text="Segundo Nombre: " TextColor="White"/>
+                <Entry Placeholder="Ingresa tu segundo nombre" TextColor="White" x:Name="txtSegundoNombre"  PlaceholderColor="Gray"/>
+
+                <Label Text="Primer apellido: " TextColor="White"/>
+                <Entry Placeholder="Ingresa tu primer apellido" TextColor="White" x:Name="txtPrimerApellido"  PlaceholderColor="Gray"/>
+
+                <Label Text="Segundo apellido: " TextColor="White"/>
+                <Entry Placeholder="Ingresa tu segundo apellido" TextColor="White" x:Name="txtSegundoApellido"  PlaceholderColor="Gray"/>
+
+                <Label Text="Identificacion: " TextColor="White"/>
+                <Entry Placeholder="Ingresa tu numero de cedula" Keyboard="Numeric" TextColor="White" x:Name="txtIdentificacion"  PlaceholderColor="Gray"/>
+
+                <Label Text="Correo electronico: " TextColor="White"/>
+                <Entry Placeholder="Ingresa tu correo electronico" Keyboard="Email" TextColor="White" x:Name="txtCorreo"  PlaceholderColor="Gray"/>
+
+                <Label Text="Numero de contacto: " TextColor="White"/>
+                <Entry Placeholder="Ingresa tu numero de celular" Keyboard="Telephone" TextColor="White" x:Name="txtCelular"  PlaceholderColor="Gray"/>
+
+                
+                
+                <Label Text="Genero: " TextColor="White"/>
+                <Picker Title="Seleccione.." x:Name="drpGenero" TextColor="White">
+                    <Picker.Items>
+                        <x:String>Femenino</x:String>
+                        <x:String>Masculino</x:String>
+                        <x:String>Otros</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Feha de nacimiento: " TextColor="White"/>
+                <DatePicker MinimumDate="01/01/1900" MaximumDate="12/31/2018" x:Name="dateFecha" Date="06/21/2018" TextColor="White"/>
+
+                <Label Text="Clave: " TextColor="White"/>
+                <Entry Placeholder="Ingresa una clave" IsPassword="true" TextColor="White" x:Name="txtClave"  PlaceholderColor="Gray"/>
+                <Entry Placeholder="repite la clave" IsPassword="true" TextColor="White" x:Name="txtClaveRepetida"  PlaceholderColor="Gray"/>
+
+                <Button Text="Actualizar"
+                    x:Name="btn_actualizar"   TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"  Clicked="btn_actualizar_Clicked"/>
+                <Button Text="Eliminar"
+                    x:Name="btn_eliminar" TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"  Clicked="btn_eliminar_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

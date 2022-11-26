@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEMANA7COMPLETO.MntEspecialidades"
+             Icon="Especialidad.png"
+             Title="Especialidad">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Especiliadad: " TextColor="Wheat" />
+                <Entry Placeholder="Ingresa la especialidad" x:Name="txtEspecialidad" TextColor="White" PlaceholderColor="Gray"/>
+                <Label Text="Descripcion: " TextColor="Wheat"/>
+                <Entry Placeholder="Ingresa descripcion" TextColor="White" x:Name="txtDescipcion"  PlaceholderColor="Gray"/>
+                <Button x:Name="btn_agregar" TextColor="White" VerticalOptions="Center"  BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"
+                         Text="Agregar" Clicked="btn_agregar_Clicked" BackgroundColor="Transparent"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

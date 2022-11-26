@@ -6,13 +6,13 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                <Label Text="Sistema de Regristro de Citas " HorizontalOptions="Center"/>
+                <Label Text="Sistema de Registro de Citas" TextColor="White" HorizontalOptions="Center"/>
                 <Image Source="https://thumbs.dreamstime.com/b/cl%C3%ADnica-dental-%C3%ADcono-y-dentista-icono-de-medicina-dise%C3%B1o-salud-dientes-e-implantes-protegidos-por-escudo-con-cruz-l%C3%ADnea-latido-168146680.jpg"
                        WidthRequest="200" HeightRequest="200"/>
 
 
                     <Entry x:Name="txtUsuario" TextColor="White" PlaceholderColor="White"
-                           Placeholder="Ingrese  su Usuario" Grid.Row="0" Grid.Column="1" />
+                           Placeholder="Ingrese su identificación" Grid.Row="0" Grid.Column="1" />
                 <Entry x:Name="txtContrasena" TextColor="White" PlaceholderColor="White"
                            Placeholder="Ingrese su contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1">
                     </Entry>

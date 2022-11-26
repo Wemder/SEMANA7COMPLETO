@@ -26,6 +26,12 @@ namespace SEMANA7COMPLETO
         {
             return db.Query<Estudiante>("SELECT * FROM Estudiante where usuario=? and contrasena=?",usuario,contrasena);
         }
+
+        public static IEnumerable<Paciente> SELECT_WHERE_PACIENTE(SQLiteConnection db, string cedula, string contrasena)
+        {
+            return db.Query<Paciente>("SELECT * FROM Paciente where cedula=? and clave=?", cedula, contrasena);
+        }
+
         private void btnIniciar_Clicked(object sender, EventArgs e)
         {
             try
@@ -33,10 +39,14 @@ namespace SEMANA7COMPLETO
                 var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "uisrael.db3");
                 var db = new SQLiteConnection(databasePath);
                 db.CreateTable<Estudiante>();
-                IEnumerable<Estudiante> resultado = SELECT_WHERE(db, txtUsuario.Text, txtContrasena.Text);
+                db.CreateTable<Especialidad>();
+                db.CreateTable<Paciente>();
+                db.CreateTable<CitaMedica>();
+                IEnumerable<Paciente> resultado = SELECT_WHERE_PACIENTE(db, txtUsuario.Text, txtContrasena.Text);
                 if (resultado.Count()>0)
                 {
-                    Navigation.PushAsync(new Menu());
+                    App.Current.Properties["usuarioLogeado"] = txtUsuario.Text;
+                    Navigation.PushAsync(new Menu(resultado.FirstOrDefault()));
                 }
                 else
                 {
@@ -53,7 +63,7 @@ namespace SEMANA7COMPLETO
 
         private async void btnRegrisgtar_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Regristro());
+            await Navigation.PushAsync(new MntPaciente());
 
         }
     }

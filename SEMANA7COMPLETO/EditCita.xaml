@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEMANA7COMPLETO.EditCita"
+             Background="#112B47">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Paciente:" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" />
+                <Label x:Name="lblNombrePaciente" HorizontalTextAlignment="Center" FontSize="Large" TextColor="White" />
+
+                <Label Text="Especialidad: " TextColor="White"/>
+
+                <Picker Title="Seleccione.." x:Name="pickerEspecialidad" TitleColor="White">
+
+                </Picker>
+                <Label Text="Feha hora inicio: " TextColor="White"/>
+                <DatePicker MinimumDate="01/01/2018" TextColor="White" MaximumDate="12/31/2018" x:Name="dateFechaInicio" Date="06/21/2018" />
+
+                <Label Text="Feha hora fin: " TextColor="White"/>
+                <DatePicker MinimumDate="01/01/2018" TextColor="White" MaximumDate="12/31/2018" x:Name="dateFechaFin" Date="06/21/2018" />
+
+                <Label Text="Título: " TextColor="White"/>
+                <Entry Placeholder="Ingresa título de la cita" TextColor="White" x:Name="txtTitulo"  PlaceholderColor="Gray"/>
+
+                <Label Text="Descripción: " TextColor="White"/>
+                <Entry Placeholder="Ingresa descripción de la cita" TextColor="White" x:Name="txtDescripcion"  PlaceholderColor="Gray"/>
+
+                <Label Text="Ubicacion consultorio: " TextColor="White"/>
+                <Entry Placeholder="Ingresa dirección deseada" TextColor="White" x:Name="txtDireccion"  PlaceholderColor="Gray"/>
+
+                <Button Text="Actualizar"
+                    x:Name="btn_actualizar"   TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"  Clicked="btn_actualizar_Clicked"/>
+                <Button Text="Eliminar"
+                    x:Name="btn_eliminar" TextColor="White" VerticalOptions="Center" BackgroundColor="Transparent" BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"  Clicked="btn_eliminar_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

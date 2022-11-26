@@ -7,11 +7,11 @@
         <ScrollView>
             <StackLayout>
                 <Label Text="Nombre: " TextColor="Wheat" />
-                <Entry Placeholder="Introduce tu Nombre" x:Name="Nombre" TextColor="White" PlaceholderColor="Gray"/>
+                <Entry Placeholder="Ingresa tu Nombre" x:Name="Nombre" TextColor="White" PlaceholderColor="Gray"/>
                 <Label Text="Usuario: " TextColor="Wheat"/>
-                <Entry Placeholder="Introduce tu Usuario " TextColor="White" Keyboard="Email" x:Name="Usuario"  PlaceholderColor="Gray"/>
+                <Entry Placeholder="Ingresa tu Usuario " TextColor="White" Keyboard="Email" x:Name="Usuario"  PlaceholderColor="Gray"/>
                 <Label Text="Contrasena: " TextColor="Wheat"/>
-                <Entry Placeholder="Introduce tu Contraseña "  TextColor="White" IsPassword="True" x:Name="Contrasenia"  PlaceholderColor="Gray"/>
+                <Entry Placeholder="Ingresa tu Contraseña "  TextColor="White" IsPassword="True" x:Name="Contrasenia"  PlaceholderColor="Gray"/>
                 <Button x:Name="btn_agregar" TextColor="White" VerticalOptions="Center"  BorderWidth="1.5"
                         CornerRadius="50"
                         BorderColor="ForestGreen"

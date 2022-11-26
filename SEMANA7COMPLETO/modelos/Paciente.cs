@@ -44,9 +44,10 @@ namespace SEMANA7COMPLETO.modelos
         public List<CitaMedica> citaMedica { get; set; } 
         
         public string getNameValue() {
-            return this.primerNombre + this.primerApellido;
+            return this.primerNombre+" " + this.primerApellido;
         }
 
-
+        [MaxLength(1)]
+        public string perfil { get; set; }
     }
 }
